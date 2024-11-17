@@ -1,0 +1,412 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.logo {
+    max-width: 20%; 
+    height: auto; 
+    margin-right: 20px
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #45a049;
+}
+
+/* DASHBOARD */
+.welcome-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.welcome-section h2 {
+    margin-top: 0;
+}
+.welcome-section p {
+    font-size: 18px;
+}
+.dashboard-section {
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard-section .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+.dashboard-section .card h3 {
+    margin-top: 0;
+}
+
+
+
+
+.header-carousel {
+    background-color: #4CAF50;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    margin-top:0%
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin distorsionarse */
+    position: absolute;
+    top: 0;                                   
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#ingresar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingresar-content {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #e9f7e9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.teleconsultas-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.teleconsultas-text {
+    flex: 1;
+}
+
+.teleconsultas-image {
+    flex: 1;
+    text-align: right;
+}
+
+.rounded-image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#tramites {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#tramites h2 {
+    margin-top: 0;
+}
+
+.tramites-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tramites-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tramites-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos específicos para la sección de consejos */
+#consejos {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#consejos h2 {
+    margin-top: 0;
+}
+
+.consejos-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.consejos-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.consejos-carousel {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Ajusta la altura según sea necesario */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor sin recortar */
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    margin: 0;
+}
