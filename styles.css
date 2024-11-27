@@ -68,8 +68,52 @@ header {
     margin-top: 0;
 }
 
+.container#citas {
+    background-color: white;
+    margin: 30px;
+}
 
+.container#citas ul {
+    list-style: none;
+    padding: 0;
+}
 
+.container#citas ul li {
+    margin-bottom: 10px;
+}
+
+.container#citas .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container#citas .button:hover {
+    background-color: #45a049;
+}
+
+.programar-teleconsulta {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.programar-teleconsulta:hover {
+    background-color: #4CAF50;
+}
 
 .header-carousel {
     background-color: #4CAF50;

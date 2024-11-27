@@ -11,7 +11,7 @@
         <img src="./img/head.png" alt="DiabeLink Logo" class="logo">
         <div class="buttons">
             <a href="index.html">Inicio</a>
-            <a href="index.html">Ingresar</a>
+            <a href="index.html#ingresar">Ingresar</a>
             <a href="teleconsultas.html">Teleconsultas</a>
             <a href="tramites.html">Trámites</a>
             <a href="consejos.html">Consejos</a>
@@ -36,7 +36,7 @@
         <h2>Ingresar</h2>
         <div class="ingresar-content">
             <div class="form-container">
-                <form action="bienvenida.html" method="get">
+                <form id="loginForm">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -94,5 +94,6 @@
     </footer>
 
     <script src="header.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
